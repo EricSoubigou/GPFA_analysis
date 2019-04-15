@@ -7,11 +7,11 @@ clear all; close all;
 addpath(genpath("./"));
 
 %% Data loading
-load("./data_and_scripts/spikes_movies/data_monkey1_natural_movie.mat");
+load("./data_and_scripts/spikes_movies/data_monkey1_noise_movie.mat");
 
-%% Root results
+%% Path results
 root_results = "./reshaped_spikes/";
-filename_result = "monkey1_natural_movie_reshaped.mat";
+filename_result = "monkey1_noise_movie_reshaped.mat";
 file_path_res = strcat(root_results, filename_result);
 
 %% Spike extraction
@@ -35,6 +35,3 @@ end
 dat = struct(field1, value1, field2, value2);
 
 save(file_path_res,'dat')
-
-
-

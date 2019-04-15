@@ -23,9 +23,10 @@ close all; clear all;
 % 1) Basic extraction of neural trajectories
 % ===========================================
 load('mat_sample/sample_dat');
+%load('../reshaped_spikes/monkey1_natural_movie_reshaped.mat');
 % Results will be saved in mat_results/runXXX/, where XXX is runIdx.
 % Use a new runIdx for each dataset.
-runIdx = 1;
+runIdx = 2;
 
 % Select method to extract neural trajectories:
 % 'gpfa' -- Gaussian-process factor analysis
